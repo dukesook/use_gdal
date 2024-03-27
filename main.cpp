@@ -10,15 +10,15 @@ int main() {
 
     GDALAllRegister();
 
-    // // Open a dataset, for example
-    // poDataset = (GDALDataset *) GDALOpen( "your_dataset.tif", GA_ReadOnly );
-    // if( poDataset == NULL ) {
-    //     // Handle error
-    // }
+    // Open a dataset, for example
+    poDataset = (GDALDataset *) GDALOpen( "your_dataset.tif", GA_ReadOnly );
+    if( poDataset == NULL ) {
+        // Handle error
+    }
 
-    // // Your GDAL operations here
+    // Your GDAL operations here
 
-    // // Clean up
-    // GDALClose(poDataset);
+    // Clean up
+    GDALClose(poDataset);
     return 0;
 }
