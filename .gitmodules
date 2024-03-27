@@ -1,0 +1,3 @@
+[submodule "submodules/gdal"]
+	path = submodules/gdal
+	url = https://github.com/OSGeo/gdal.git
