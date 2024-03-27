@@ -14,6 +14,7 @@
 
 ### Write CMakeLists.txt
 
+- See use_gdal CMakeLists.txt example
 - Use C++ 17: set(CMAKE_CXX_STANDARD 17)
 - Include target directories
   - gdal/gcore/
