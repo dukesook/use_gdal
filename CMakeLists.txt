@@ -17,11 +17,11 @@ add_executable(${PROJECT_NAME} main.cpp)
 
 # Assuming 'gdal.h' is located in 'submodules/gdal/gdal'
 target_include_directories(${PROJECT_NAME} PRIVATE 
-  submodules/gdal/gcore/
-  submodules/gdal/port/ # finds cpl_port.h
-  submodules/gdal/ogr/ # finds opr_api.h
-  submodules/gdal/build/gcore/ # finds gdal_version.h
-  submodules/gdal/build/port/) # finds cpl_config.h
+  submodules/gdal/gcore/        # finds gdal.h
+  submodules/gdal/port/         # finds cpl_port.h
+  submodules/gdal/ogr/          # finds opr_api.h
+  submodules/gdal/build/gcore/  # finds gdal_version.h
+  submodules/gdal/build/port/)  # finds cpl_config.h
 
 # Link your executable to GDAL
 # target_link_libraries(${PROJECT_NAME} ${GDAL_LIB_TARGET_NAME})
